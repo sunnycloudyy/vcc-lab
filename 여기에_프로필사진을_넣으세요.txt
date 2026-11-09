@@ -1,0 +1,3 @@
+이 폴더에 구성원 사진을 넣으세요.
+예: kim-minji.jpg
+그리고 members.js 파일의 해당 사람 image를 'images/members/kim-minji.jpg'로 수정하세요.
