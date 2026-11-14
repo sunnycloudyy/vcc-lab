@@ -122,3 +122,91 @@
     padding-bottom: 24px;
   }
 }
+
+/* ===============================
+   VCC LAB - PHOTO FREE FACULTY
+   =============================== */
+
+.faculty-text-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(250px, 0.8fr);
+  align-items: stretch;
+  gap: 48px;
+  padding: 34px 0;
+}
+
+/* 교수님 소개 */
+.faculty-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 26px 0;
+}
+
+.faculty-text-layout .faculty-info h3 {
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.2;
+  margin: 16px 0 12px;
+}
+
+.faculty-text-layout .faculty-info p {
+  font-size: 15px;
+  color: #777;
+  margin: 0 0 25px;
+}
+
+.faculty-text-layout .text-link {
+  font-size: 13px;
+}
+
+/* 우측 연구실 타이포그래피 */
+.faculty-lab-mark {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 270px;
+  padding: 28px 30px;
+  background: #f7f7f7;
+}
+
+.faculty-mark-top,
+.faculty-mark-bottom {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #999;
+}
+
+.faculty-mark-title {
+  font-size: clamp(50px, 6vw, 88px);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.065em;
+  color: #242424;
+  margin: 30px 0;
+}
+
+/* 모바일 */
+@media (max-width: 700px) {
+  .faculty-text-layout {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 24px 0;
+  }
+
+  .faculty-info {
+    padding: 12px 0 20px;
+  }
+
+  .faculty-lab-mark {
+    min-height: 210px;
+    padding: 24px;
+  }
+
+  .faculty-mark-title {
+    font-size: 62px;
+  }
+}
